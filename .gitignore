@@ -1,6 +1,9 @@
+# OS generated files
 .DS_Store
 .thumbs.db
-node_modules
+
+# Dependencies
+node_modules/
 
 # Quasar core related directories
 .quasar
@@ -17,10 +20,20 @@ node_modules
 /src-capacitor/www
 /src-capacitor/node_modules
 
+# Electron related directories and files
+/src-electron/dist
+/src-electron/node_modules
+
+# BEX related directories and files
+/src-bex/www
+/src-bex/js/core
+
 # Log files
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
 # Editor directories and files
 .idea
@@ -28,6 +41,47 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
+*.sw?
 
-# local .env files
-.env.local*
+# Environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+/dist-ssr
+*.local
+
+# Testing
+/coverage
+/.nyc_output
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
