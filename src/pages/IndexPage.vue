@@ -1,6 +1,6 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    Hello, this is the index page.
+    Hello, this is Lost and Found.
   </q-page>
 </template>
 
